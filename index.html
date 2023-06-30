@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="total-container">
+      <h1 class="main-header">ToDo List</h1>
+      <div class="input-container">
+        <input
+          type="text"
+          class="input-field"
+          id="inputBox"
+          placeholder="add new task"
+        />
+        <button id="btnAdd">Add Task</button>
+      </div>
+
+      <div class="container">
+        <h1 class="header">Tasks</h1>
+        <div class="task-container">
+          <div class="in-complete-container sub-container" id="class1">
+            <h3 class="no">Incomplete</h3>
+            <ul class="list" id="inComplete"></ul>
+          </div>
+          <div class="completed-container sub-container" id="class2">
+            <h3 class="no">completed</h3>
+            <ul class="list" id="complete"></ul>
+          </div>
+        </div>
+        <div class="center">
+          <button class="clear" id="removeAll">Clear</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

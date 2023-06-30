@@ -1,0 +1,184 @@
+.total-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.total-container:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main-header {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  flex-grow: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  background-color: #fffcfc;
+}
+
+#btnAdd,
+.clear {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#btnAdd:hover,
+.clear:hover {
+  background-color: #45a049;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.container:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.task-container {
+  display: flex;
+  gap: 20px;
+}
+
+.sub-container {
+  flex-grow: 1;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.sub-container:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.list li:last-child {
+  margin-bottom: 0;
+}
+
+.completed-container {
+  background-color: #f2f2f2;
+}
+
+.completed-container li {
+  text-decoration: line-through;
+  color: #888;
+}
+.no {
+  text-align: center;
+  margin-top: 0px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+.list li label {
+  flex-grow: 1;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.list li label:hover {
+  color: #4caf50;
+}
+
+.list li button {
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 4px 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  opacity: 0;
+  transform: scale(0.8);
+  position: absolute;
+  right: 0;
+}
+
+.list li:hover button {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.list li button:hover {
+  background-color: #ff3333;
+}
+
+@keyframes deleteAnimation {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+.list li.delete-animation {
+  animation: deleteAnimation 0.2s ease forwards;
+}
+
+.center {
+  margin-top: 30px;
+  text-align: center;
+}
